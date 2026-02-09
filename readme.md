@@ -1,5 +1,7 @@
 # ZMK CONFIG FOR THE CHARYBDIS 4X6 WIRELESS SPLIT KEYBOARD
 
+keymap editor https://nickcoutsos.github.io/keymap-editor/ 
+
 ## BOM
 
 Here is the BOM for this project: [BOM Charybdis 4x6 Wireless](/docs/bom/readme.md)
