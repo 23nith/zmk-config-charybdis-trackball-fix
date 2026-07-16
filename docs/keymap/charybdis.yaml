@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - '='
-  - '&lt_arrow_caps 6'
+  - {t: '&macos_caps', h: ARROW}
   - {t: A, h: LCTRL}
   - S
   - D
@@ -367,7 +367,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
