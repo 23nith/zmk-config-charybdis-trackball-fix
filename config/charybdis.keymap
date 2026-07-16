@@ -60,14 +60,14 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <13 14>;
             bindings = <&kp ESC>;
         };
 
-        combo_capslock {
+        combo_backspace {
             timeout-ms = <50>;
-            key-positions = <24 25>;
-            bindings = <&kp CAPS>;
+            key-positions = <21 22>;
+            bindings = <&kp BACKSPACE>;
         };
 
         // Hold three keys (e.g. right thumb cluster) to unlock ZMK Studio for keymap edits
@@ -85,8 +85,8 @@
             bindings = <
 &kp GRAVE   &ht_1_tilde TILDE N1      &kp N2         &kp N3      &kp N4        &kp N5   &kp N6            &kp N7        &kp N8      &kp N9           &kp N0          &kp MINUS
 &kp TAB     &kp Q        &kp W          &kp E       &kp R         &kp T               &kp Y  &kp U         &kp I       &kp O            &kp P           &kp EQUAL
-&kp ESC     &mt LCTRL A  &mt LALT S     &mt LGUI D  &mt LSHIFT F  &kp G               &kp H  &mt RSHIFT J  &mt RGUI K  &mt RALT L       &mt RCTRL SEMI  &kp APOS
-&kp LSHIFT  &lt 3 Z      &kp X          &kp C       &kp V         &kp B               &kp N  &kp M         &kp COMMA   &kp DOT          &lt 3 SLASH     &kp RSHIFT
+&lt 6 CAPS   &mt LCTRL A  &kp S          &kp D       &kp F         &kp G               &kp H  &kp J         &kp K       &kp L            &mt RCTRL APOS  &kp APOS
+&lt 3 LSHIFT &mt LSHIFT Z &kp X          &kp C       &mt LALT V    &kp B               &kp N  &mt RALT M    &kp COMMA   &kp DOT          &mt RSHIFT SLASH  &kp RSHIFT
             &lt 1 TAB    &kp BACKSPACE  &mo_exit_AML 5 4    &kp SPACE     &kp DEL  &kp ENTER         &kp SPACE                 &lt 2 BACKSPACE
             >;
         };
@@ -125,7 +125,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &trans
 &trans  &trans  &mo 5   &trans  &trans  &trans          &trans  &trans    &trans    &mo 5     &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans          &trans              &trans
             >;
@@ -135,8 +135,18 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans    &trans    &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans              &trans
+            >;
+        };
+
+        ARROW {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans    &trans     &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans          &trans              &trans
             >;
         };
