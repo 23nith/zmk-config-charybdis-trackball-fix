@@ -39,14 +39,14 @@ layers:
   - ''''
   - {t: LSHIFT, h: ADJ}
   - {t: Z, h: LSHIFT}
-  - X
+  - {t: X, h: LGUI}
   - C
   - {t: V, h: LALT}
   - B
   - N
   - {t: M, h: RALT}
   - ','
-  - .
+  - {t: ., h: LGUI}
   - {t: /, h: RSHIFT}
   - RSHIFT
   - {t: TAB, h: NAV}
