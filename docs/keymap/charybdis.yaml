@@ -25,29 +25,29 @@ layers:
   - O
   - P
   - '='
-  - ESC
+  - {t: CAPS, h: ARROW}
   - {t: A, h: LCTRL}
-  - {t: S, h: LALT}
-  - {t: D, h: LGUI}
-  - {t: F, h: LSHIFT}
+  - S
+  - D
+  - F
   - G
   - H
-  - {t: J, h: RSHIFT}
-  - {t: K, h: RGUI}
-  - {t: L, h: RALT}
-  - {t: ;, h: RCTRL}
+  - J
+  - K
+  - L
+  - {t: '''', h: RCTRL}
   - ''''
-  - LSHIFT
-  - {t: Z, h: ADJ}
+  - {t: LSHIFT, h: ADJ}
+  - {t: Z, h: LSHIFT}
   - X
   - C
-  - V
+  - {t: V, h: LALT}
   - B
   - N
-  - M
+  - {t: M, h: RALT}
   - ','
   - .
-  - {t: /, h: ADJ}
+  - {t: /, h: RSHIFT}
   - RSHIFT
   - {t: TAB, h: NAV}
   - BACKSPACE
@@ -208,8 +208,8 @@ layers:
   - '&mkp MB3'
   - '&bootloader'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - SCROLL
   - SNIP
   - VOLUME DOWN
@@ -261,12 +261,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
-  - '&mkp MB2'
   - '&mkp MB3'
-  - {t: ▽, type: trans}
+  - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - SCROLL
   - {type: held}
   - {t: ▽, type: trans}
@@ -318,8 +318,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
-  - '&mkp MB2'
   - '&mkp MB3'
+  - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -342,10 +342,67 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  ARROW:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
-- p: [0, 1]
+- p: [13, 14]
   k: ESC
-- p: [24, 25]
-  k: CAPS
+- p: [21, 22]
+  k: BACKSPACE
 - p: [53, 54, 55]
   k: '&studio_unlock'
