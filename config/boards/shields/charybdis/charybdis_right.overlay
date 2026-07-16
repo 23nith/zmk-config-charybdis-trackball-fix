@@ -50,15 +50,29 @@
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
         /*   optional features   */
-        snipe-layers = <3>;
-        scroll-layers = <4>;
+        scroll-layers = <5>;
         /* automouse-layer = <4>; */
     };
+};
+
+&zip_temp_layer {
+    // AML won't trigger within 500ms of a keypress
+    require-prior-idle-ms = <500>;
+    // pressing these while AML is active won't cancel it
+    excluded-positions = <
+        31 // J
+        32 // K
+        33 // L
+        36 // LShift
+    >;
 };
 
 / {
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
+
+    // moving the trackball activates layer 4 (SNIP/mouse) for 10 seconds
+    input-processors = <&zip_temp_layer 4 10000>;
   };
 };
