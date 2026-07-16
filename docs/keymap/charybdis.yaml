@@ -30,8 +30,8 @@ layers:
   - S
   - D
   - F
-  - G
-  - H
+  - {t: G, h: '&cmd_alt'}
+  - {t: H, h: '&cmd_alt'}
   - J
   - K
   - L
