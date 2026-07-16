@@ -1,8 +1,8 @@
-layout: {zmk_keyboard: charybdis, layout_name: default_transform}
+layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
   BASE:
   - '`'
-  - '1'
+  - {t: '1', h: '~'}
   - '2'
   - '3'
   - '4'
@@ -106,7 +106,7 @@ layers:
   - '3'
   - KP MULTIPLY
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - VOLUME DOWN
   - VOLUME UP
@@ -170,7 +170,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: FAST FORWARD, h: toggle}
   - PLAY PAUSE
-  - {t: ▽, type: trans}
+  - {type: held}
   ADJ:
   - F12
   - F1
@@ -209,7 +209,7 @@ layers:
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - SCROLL
   - SNIP
   - VOLUME DOWN
@@ -266,9 +266,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - SCROLL
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -323,8 +323,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -345,3 +345,7 @@ layers:
 combos:
 - p: [0, 1]
   k: ESC
+- p: [24, 25]
+  k: CAPS
+- p: [53, 54, 55]
+  k: '&studio_unlock'

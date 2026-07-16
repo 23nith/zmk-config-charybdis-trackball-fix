@@ -1,0 +1,22 @@
+name: Draw keymap
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "config/charybdis.keymap"
+      - "config/boards/shields/charybdis/charybdis.dtsi"
+  workflow_dispatch:
+
+jobs:
+  draw:
+    permissions:
+      contents: write
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@v0.23.0
+    with:
+      keymap_patterns: "config/charybdis.keymap"
+      output_folder: "docs/keymap"
+      # charybdis.dtsi doesn't match keymap-drawer's auto-detected
+      # *-layout(s).dtsi naming, so point it at the physical layout explicitly.
+      draw_args: "charybdis:'-d config/boards/shields/charybdis/charybdis.dtsi -l charybdis_6col_layout'"
+      commit_message: "docs: redraw keymap diagram"

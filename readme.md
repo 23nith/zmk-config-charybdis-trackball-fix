@@ -23,6 +23,5 @@ Here is the BOM for this project: [BOM Charybdis 4x6 Wireless](/docs/bom/readme.
 
 ## Keymap
 
-This is iamtienng's keymap for Charybdis
-Generated with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer-web/)
-![Tim Keymap](/docs/keymap/tim_keymap.svg)
+Auto-generated from [`config/charybdis.keymap`](/config/charybdis.keymap) on every push via [Keymap Drawer](https://github.com/caksoylar/keymap-drawer), so it always reflects the current keymap.
+![Charybdis Keymap](/docs/keymap/charybdis.svg)
