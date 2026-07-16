@@ -38,9 +38,10 @@
         };
 
         // macOS ignores Caps Lock presses shorter than ~100ms, so hold the tap a bit longer
+        // (param is unused, but hold-tap always supplies one to each side)
         macos_caps: macos_caps {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
             label = "MACOS_CAPS";
             tap-ms = <100>;
             bindings = <&macro_tap &kp CAPS>;
@@ -51,7 +52,7 @@
         lt_arrow_caps: lt_arrow_caps {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_ARROW_CAPS";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             bindings = <&mo>, <&macos_caps>;
             tapping-term-ms = <170>;
             quick-tap-ms = <200>;
@@ -126,7 +127,7 @@
             bindings = <
 &kp GRAVE   &ht_1_tilde TILDE N1      &kp N2         &kp N3      &kp N4        &kp N5   &kp N6            &kp N7        &kp N8      &kp N9           &kp N0          &kp MINUS
 &kp TAB     &kp Q        &kp W          &kp E       &kp R         &kp T               &kp Y  &kp U         &kp I       &kp O            &kp P           &kp EQUAL
-&lt_arrow_caps 6  &mt LCTRL A  &kp S          &kp D       &kp F         &ht_cmd_alt 0 G     &ht_cmd_alt 0 H  &kp J         &kp K       &kp L            &mt RCTRL APOS  &kp APOS
+&lt_arrow_caps 6 0  &mt LCTRL A  &kp S          &kp D       &kp F         &ht_cmd_alt 0 G     &ht_cmd_alt 0 H  &kp J         &kp K       &kp L            &mt RCTRL APOS  &kp APOS
 &lt 3 LSHIFT &mt LSHIFT Z &mt LGUI X     &kp C       &mt LALT V    &kp B               &kp N  &mt RALT M    &kp COMMA   &mt LGUI DOT     &mt RSHIFT SLASH  &kp RSHIFT
             &lt 1 TAB    &kp BACKSPACE  &mo_exit_AML 5 4    &kp SPACE     &kp DEL  &kp ENTER         &kp SPACE                 &lt 2 BACKSPACE
             >;
