@@ -1,5 +1,5 @@
 # ZMK CONFIG FOR THE CHARYBDIS 4X6 WIRELESS SPLIT KEYBOARD
-
+<!-- Trigger GitHub Actions -->
 keymap editor https://nickcoutsos.github.io/keymap-editor/
 
 ## ZMK Studio — keyboard in "Select device" (Bluetooth)
